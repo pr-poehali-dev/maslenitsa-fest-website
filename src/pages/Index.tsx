@@ -119,7 +119,7 @@ const Index = () => {
             <img 
               src="https://cdn.poehali.dev/projects/36340900-2961-4ade-91dd-d0c85444fe8c/bucket/5fcbe03e-0f83-46f9-a770-d464b958de5b.png" 
               alt="Дом Семейного Наследия" 
-              className="h-32 md:h-40 w-auto drop-shadow-lg"
+              className="h-20 md:h-28 w-auto drop-shadow-lg"
             />
           </div>
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-in">
@@ -209,18 +209,18 @@ const Index = () => {
               Место силы: где нас найти
             </h2>
             <div className="grid md:grid-cols-3 gap-6 text-left">
-              <Card className="p-6">
+              <Card className="p-6 bg-card/95 backdrop-blur-sm">
                 <Icon name="Calendar" size={32} className="mb-4 text-primary" />
                 <h3 className="font-semibold text-lg mb-2">Дата</h3>
                 <p className="text-muted-foreground">22 февраля 2026 года</p>
               </Card>
-              <Card className="p-6">
+              <Card className="p-6 bg-card/95 backdrop-blur-sm">
                 <Icon name="Clock" size={32} className="mb-4 text-primary" />
                 <h3 className="font-semibold text-lg mb-2">Время</h3>
                 <p className="text-muted-foreground">12:00 — 16:00</p>
                 <p className="text-sm text-muted-foreground mt-1">(старт квеста в 12:30!)</p>
               </Card>
-              <Card className="p-6">
+              <Card className="p-6 bg-card/95 backdrop-blur-sm">
                 <Icon name="MapPin" size={32} className="mb-4 text-primary" />
                 <h3 className="font-semibold text-lg mb-2">Адрес</h3>
                 <p className="text-muted-foreground">
@@ -298,7 +298,7 @@ const Index = () => {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {takeaways.map((item, index) => (
-                <Card key={index} className="p-6 hover-scale transition-all text-center">
+                <Card key={index} className="p-6 hover-scale transition-all text-center bg-card/95 backdrop-blur-sm">
                   <div className="flex justify-center mb-4">
                     <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
                       <Icon name={item.icon} size={32} className="text-primary" />
@@ -328,7 +328,7 @@ const Index = () => {
                 <AccordionItem
                   key={index}
                   value={`item-${index}`}
-                  className="bg-card rounded-lg px-6"
+                  className="bg-card/95 backdrop-blur-sm rounded-lg px-6"
                 >
                   <AccordionTrigger className="text-lg font-semibold hover:no-underline">
                     {item.question}
