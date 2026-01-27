@@ -92,7 +92,7 @@ const Index = () => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url('https://cdn.poehali.dev/projects/36340900-2961-4ade-91dd-d0c85444fe8c/files/305a9be4-8b3f-4598-9484-68aed1210b6a.jpg')`,
+            backgroundImage: `url('https://cdn.poehali.dev/projects/36340900-2961-4ade-91dd-d0c85444fe8c/files/3df01989-1dfa-4fc9-90b4-085ad11319ac.jpg')`,
           }}
         >
           <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-background"></div>
@@ -124,11 +124,11 @@ const Index = () => {
           <div className="flex flex-wrap gap-6 justify-center text-white/90 text-sm md:text-base">
             <div className="flex items-center gap-2">
               <Icon name="Calendar" size={20} />
-              <span>22 февраля 2025</span>
+              <span>22 февраля 2026</span>
             </div>
             <div className="flex items-center gap-2">
               <Icon name="Clock" size={20} />
-              <span>12:00 — 18:00</span>
+              <span>12:00 — 16:00</span>
             </div>
             <div className="flex items-center gap-2">
               <Icon name="MapPin" size={20} />
@@ -190,12 +190,12 @@ const Index = () => {
               <Card className="p-6">
                 <Icon name="Calendar" size={32} className="mb-4 text-primary" />
                 <h3 className="font-semibold text-lg mb-2">Дата</h3>
-                <p className="text-muted-foreground">22 февраля 2025 года</p>
+                <p className="text-muted-foreground">22 февраля 2026 года</p>
               </Card>
               <Card className="p-6">
                 <Icon name="Clock" size={32} className="mb-4 text-primary" />
                 <h3 className="font-semibold text-lg mb-2">Время</h3>
-                <p className="text-muted-foreground">12:00 — 18:00</p>
+                <p className="text-muted-foreground">12:00 — 16:00</p>
                 <p className="text-sm text-muted-foreground mt-1">(старт квеста в 12:30!)</p>
               </Card>
               <Card className="p-6">
@@ -406,7 +406,7 @@ const Index = () => {
             </div>
 
             <div className="border-t border-white/20 pt-8 text-center text-sm text-white/80">
-              <p>© 2025 Дом Семейного Наследия.</p>
+              <p>© 2026 Дом Семейного Наследия.</p>
               <p className="mt-2">Фестиваль «Семейная Масленица на Озёрах».</p>
               <p className="mt-2 italic">
                 Создано с теплом для семей Владивостока и Приморья.
