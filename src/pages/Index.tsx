@@ -95,11 +95,12 @@ const Index = () => {
   return (
     <div className="min-h-screen relative">
       <div 
-        className="fixed inset-0 opacity-[0.03] pointer-events-none z-0"
+        className="fixed inset-0 opacity-[0.08] pointer-events-none z-0"
         style={{
           backgroundImage: `url('https://cdn.poehali.dev/projects/36340900-2961-4ade-91dd-d0c85444fe8c/files/b07bb08d-c997-4cdf-8984-4b05977ff851.jpg')`,
           backgroundRepeat: 'repeat',
-          backgroundSize: '400px 400px'
+          backgroundSize: '400px 400px',
+          filter: 'hue-rotate(-20deg) saturate(2)'
         }}
       />
       {/* Hero Section */}
@@ -110,10 +111,17 @@ const Index = () => {
             backgroundImage: `url('https://cdn.poehali.dev/projects/36340900-2961-4ade-91dd-d0c85444fe8c/files/3df01989-1dfa-4fc9-90b4-085ad11319ac.jpg')`,
           }}
         >
-          <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/15 to-background"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/5 to-background"></div>
         </div>
         
         <div className="relative z-10 container mx-auto px-4 py-20 text-center">
+          <div className="mb-8 flex justify-center">
+            <img 
+              src="https://cdn.poehali.dev/projects/36340900-2961-4ade-91dd-d0c85444fe8c/bucket/5fcbe03e-0f83-46f9-a770-d464b958de5b.png" 
+              alt="Дом Семейного Наследия" 
+              className="h-32 md:h-40 w-auto drop-shadow-lg"
+            />
+          </div>
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-in">
             Масленица на Озёрах
           </h1>
@@ -352,8 +360,8 @@ const Index = () => {
               До встречи на тропинках, ведущих к весне!
             </p>
             <Button
-              size="lg"
-              className="text-lg px-12 py-6 bg-white text-primary hover:bg-white/90 hover-scale"
+              size="sm"
+              className="text-sm sm:text-base px-4 py-3 sm:px-8 sm:py-5 bg-white text-primary hover:bg-white/90 hover-scale"
             >
               Зарегистрироваться на фестиваль
             </Button>
