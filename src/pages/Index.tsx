@@ -117,9 +117,7 @@ const Index = () => {
               size="lg"
               variant="outline"
               className="text-lg px-8 py-6 bg-white/10 backdrop-blur-sm text-white border-white/30 hover:bg-white/20"
-            >
-              Узнать подробнее
-            </Button>
+            >Программа мероприятия</Button>
           </div>
           <div className="flex flex-wrap gap-6 justify-center text-white/90 text-sm md:text-base">
             <div className="flex items-center gap-2">
