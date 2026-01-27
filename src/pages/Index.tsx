@@ -85,8 +85,23 @@ const Index = () => {
     },
   ];
 
+  const scrollToProgram = () => {
+    const programSection = document.getElementById('program-section');
+    if (programSection) {
+      programSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen relative">
+      <div 
+        className="fixed inset-0 opacity-[0.03] pointer-events-none z-0"
+        style={{
+          backgroundImage: `url('https://cdn.poehali.dev/projects/36340900-2961-4ade-91dd-d0c85444fe8c/files/b07bb08d-c997-4cdf-8984-4b05977ff851.jpg')`,
+          backgroundRepeat: 'repeat',
+          backgroundSize: '400px 400px'
+        }}
+      />
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div
@@ -95,7 +110,7 @@ const Index = () => {
             backgroundImage: `url('https://cdn.poehali.dev/projects/36340900-2961-4ade-91dd-d0c85444fe8c/files/3df01989-1dfa-4fc9-90b4-085ad11319ac.jpg')`,
           }}
         >
-          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-background"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/15 to-background"></div>
         </div>
         
         <div className="relative z-10 container mx-auto px-4 py-20 text-center">
@@ -110,12 +125,13 @@ const Index = () => {
             а семья становится сильнее.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <Button size="lg" className="text-lg px-8 py-6 hover-scale">
-              Зарегистрироваться
+            <Button size="sm" className="text-sm sm:text-base px-4 py-3 sm:px-6 sm:py-4 hover-scale">
+              Зарегистрироваться на фестиваль
             </Button>
             <Button
               size="lg"
               variant="outline"
+              onClick={scrollToProgram}
               className="text-lg px-8 py-6 bg-white/10 backdrop-blur-sm text-white border-white/30 hover:bg-white/20"
             >Программа мероприятия</Button>
           </div>
@@ -220,7 +236,7 @@ const Index = () => {
       </section>
 
       {/* Program Section */}
-      <section className="py-20 bg-muted/30 relative overflow-hidden">
+      <section id="program-section" className="py-20 bg-muted/30 relative overflow-hidden z-10">
         <div
           className="absolute top-0 right-0 w-64 h-64 opacity-10 bg-cover"
           style={{
