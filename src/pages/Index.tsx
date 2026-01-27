@@ -137,13 +137,13 @@ const Index = () => {
               Зарегистрироваться на фестиваль
             </Button>
             <Button
-              size="lg"
+              size="sm"
               variant="outline"
               onClick={scrollToProgram}
-              className="text-lg px-8 py-6 bg-white/10 backdrop-blur-sm text-white border-white/30 hover:bg-white/20"
+              className="text-sm sm:text-base px-4 py-3 sm:px-6 sm:py-4 bg-white/10 backdrop-blur-sm text-white border-white/30 hover:bg-white/20"
             >Программа мероприятия</Button>
           </div>
-          <div className="flex flex-wrap gap-6 justify-center text-white/90 text-sm md:text-base">
+          <div className="flex flex-wrap gap-6 justify-center text-sm md:text-base" style={{ color: '#8E7254' }}>
             <div className="flex items-center gap-2">
               <Icon name="Calendar" size={20} />
               <span>22 февраля 2026</span>
