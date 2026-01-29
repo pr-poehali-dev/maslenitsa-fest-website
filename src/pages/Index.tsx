@@ -74,7 +74,7 @@ const Index = () => {
 
   const faqItems = [
     {
-      question: "Будет ли тепло?",
+      question: "Будет где согреться?",
       answer:
         "Да! У нас два больших отапливаемых павильона (для мастер-классов, ярмарки и трапезной), где можно согреться, перекусить и отдохнуть. Для комфорта в уличных забавах одевайтесь тепло.",
     },
@@ -95,7 +95,7 @@ const Index = () => {
   return (
     <div className="min-h-screen relative">
       <div 
-        className="fixed inset-0 opacity-[0.08] pointer-events-none z-0"
+        className="fixed inset-0 opacity-[0.1] pointer-events-none z-0"
         style={{
           backgroundImage: `url('https://cdn.poehali.dev/projects/36340900-2961-4ade-91dd-d0c85444fe8c/files/b07bb08d-c997-4cdf-8984-4b05977ff851.jpg')`,
           backgroundRepeat: 'repeat',
@@ -109,6 +109,7 @@ const Index = () => {
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage: `url('https://cdn.poehali.dev/projects/36340900-2961-4ade-91dd-d0c85444fe8c/files/3df01989-1dfa-4fc9-90b4-085ad11319ac.jpg')`,
+            backgroundPosition: '70% center'
           }}
         >
           <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/5 to-background"></div>
@@ -167,10 +168,12 @@ const Index = () => {
             <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-foreground">
               Наш фестиваль — это осознанный праздник
             </h2>
-            <p className="text-lg md:text-xl text-center mb-12 text-muted-foreground leading-relaxed">
-              для тех, кто ценит глубину общения, теплоту традиций и хочет подарить 
-              своей семье незабываемый опыт единения.
-            </p>
+            <div className="bg-white/95 backdrop-blur-sm rounded-xl p-8 mb-12">
+              <p className="text-lg md:text-xl text-center text-muted-foreground leading-relaxed">
+                для тех, кто ценит глубину общения, теплоту традиций и хочет подарить 
+                своей семье незабываемый опыт единения.
+              </p>
+            </div>
             
             <div className="grid md:grid-cols-2 gap-8 mb-12">
               <Card className="p-8 hover-scale transition-all bg-card/95 backdrop-blur-sm">
@@ -230,13 +233,17 @@ const Index = () => {
               </Card>
             </div>
             <div className="mt-8 flex gap-4 justify-center">
-              <Button variant="outline">
-                <Icon name="Map" size={18} className="mr-2" />
-                Карта 2GIS
+              <Button variant="outline" asChild>
+                <a href="https://2gis.ru/vladivostok/geo/70000001041083025/132.077773,43.363176" target="_blank" rel="noopener noreferrer">
+                  <Icon name="Map" size={18} className="mr-2" />
+                  Карта 2GIS
+                </a>
               </Button>
-              <Button variant="outline">
-                <Icon name="Navigation" size={18} className="mr-2" />
-                Яндекс.Карты
+              <Button variant="outline" asChild>
+                <a href="https://yandex.ru/maps/org/ozyora/63599171038/?ll=132.077796%2C43.363128&z=16.56" target="_blank" rel="noopener noreferrer">
+                  <Icon name="Navigation" size={18} className="mr-2" />
+                  Яндекс.Карты
+                </a>
               </Button>
             </div>
           </div>
@@ -256,13 +263,15 @@ const Index = () => {
             <h2 className="text-4xl md:text-5xl font-bold text-center mb-6">
               Программа дня
             </h2>
-            <p className="text-xl text-center mb-12 text-muted-foreground">
-              Путешествие для всей семьи
-            </p>
-            <p className="text-lg text-center mb-12 text-muted-foreground max-w-3xl mx-auto">
-              Мы продумали каждую минуту, чтобы и детям, и взрослым было 
-              по-настоящему интересно и тепло — и на душе, и в наших уютных павильонах.
-            </p>
+            <div className="bg-white/95 backdrop-blur-sm rounded-xl p-8 mb-12 max-w-3xl mx-auto">
+              <p className="text-xl text-center mb-4 text-foreground font-semibold">
+                Путешествие для всей семьи
+              </p>
+              <p className="text-lg text-center text-muted-foreground">
+                Мы продумали каждую минуту, чтобы и детям, и взрослым было 
+                по-настоящему интересно и тепло — и на душе, и в наших уютных павильонах.
+              </p>
+            </div>
 
             <div className="space-y-6">
               {programItems.map((item, index) => (
@@ -374,6 +383,7 @@ const Index = () => {
                 <span>•</span>
                 <span>Дети до 3 лет — бесплатно</span>
               </div>
+              <p className="text-sm mt-2 italic">* Скидки для многодетных семей 50% при предъявлении удостоверения</p>
             </div>
           </div>
         </div>
