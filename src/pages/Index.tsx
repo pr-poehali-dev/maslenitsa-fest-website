@@ -108,8 +108,7 @@ const Index = () => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url('https://cdn.poehali.dev/projects/36340900-2961-4ade-91dd-d0c85444fe8c/files/3df01989-1dfa-4fc9-90b4-085ad11319ac.jpg')`,
-            backgroundPosition: '70% center'
+            backgroundImage: `url('https://cdn.poehali.dev/projects/36340900-2961-4ade-91dd-d0c85444fe8c/files/3df01989-1dfa-4fc9-90b4-085ad11319ac.jpg')`
           }}
         >
           <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/5 to-background"></div>
@@ -134,8 +133,10 @@ const Index = () => {
             а семья становится сильнее.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <Button size="sm" className="text-sm sm:text-base px-4 py-3 sm:px-6 sm:py-4 hover-scale">
-              Зарегистрироваться на фестиваль
+            <Button size="sm" className="text-sm sm:text-base px-4 py-3 sm:px-6 sm:py-4 hover-scale" asChild>
+              <a href="http://t.me/InfoCSNbot" target="_blank" rel="noopener noreferrer">
+                Зарегистрироваться на праздник
+              </a>
             </Button>
             <Button
               size="sm"
@@ -371,8 +372,11 @@ const Index = () => {
             <Button
               size="sm"
               className="text-sm sm:text-base px-4 py-3 sm:px-8 sm:py-5 bg-white text-primary hover:bg-white/90 hover-scale"
+              asChild
             >
-              Зарегистрироваться на фестиваль
+              <a href="http://t.me/InfoCSNbot" target="_blank" rel="noopener noreferrer">
+                Зарегистрироваться на праздник
+              </a>
             </Button>
             <div className="mt-8 flex flex-col gap-3 text-sm">
               <p className="font-semibold text-lg">Стоимость входа:</p>
@@ -408,8 +412,8 @@ const Index = () => {
                   </div>
                   <div className="flex items-center gap-2">
                     <Icon name="Phone" size={18} />
-                    <a href="tel:+79242174080" className="hover:underline">
-                      +7 (924) 217-40-80
+                    <a href="tel:+79146520628" className="hover:underline">
+                      +7 (914) 652-06-28
                     </a>
                   </div>
                   <div className="flex items-center gap-2">
