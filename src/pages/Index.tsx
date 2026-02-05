@@ -115,11 +115,21 @@ const Index = () => {
         </div>
         
         <div className="relative z-10 container mx-auto px-4 py-20 text-center">
-          <div className="mb-8 flex justify-center">
+          <div className="mb-8 flex justify-center gap-6 flex-wrap items-center">
             <img 
               src="https://cdn.poehali.dev/projects/36340900-2961-4ade-91dd-d0c85444fe8c/bucket/5fcbe03e-0f83-46f9-a770-d464b958de5b.png" 
               alt="Дом Семейного Наследия" 
-              className="h-20 md:h-28 w-auto drop-shadow-lg"
+              className="h-16 md:h-20 w-auto drop-shadow-lg"
+            />
+            <img 
+              src="https://cdn.poehali.dev/projects/36340900-2961-4ade-91dd-d0c85444fe8c/bucket/ade0e8aa-79e8-4a0f-a8a2-6f6803432c14.jpg" 
+              alt="Инициатива" 
+              className="h-16 md:h-20 w-auto drop-shadow-lg"
+            />
+            <img 
+              src="https://cdn.poehali.dev/projects/36340900-2961-4ade-91dd-d0c85444fe8c/bucket/8e1314c6-5d69-462d-9dd8-64e4b29e6fa6.jpg" 
+              alt="Озёра парк отдыха" 
+              className="h-16 md:h-20 w-auto drop-shadow-lg"
             />
           </div>
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-in">
@@ -167,7 +177,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-foreground">
-              Наш фестиваль — это осознанный праздник
+              Наше мероприятие — это осознанный праздник
             </h2>
             <div className="bg-white/95 backdrop-blur-sm rounded-xl p-8 mb-12">
               <p className="text-lg md:text-xl text-center text-muted-foreground leading-relaxed">
@@ -435,8 +445,10 @@ const Index = () => {
                 <p className="text-white/90 mb-3">
                   Хотите стать частью праздника? Свяжитесь с нами для обсуждения партнёрства.
                 </p>
-                <Button variant="outline" className="border-white text-white hover:bg-white/10">
-                  Написать нам
+                <Button variant="outline" className="border-white text-white hover:bg-white/10" asChild>
+                  <a href="https://t.me/Kristina_Fedotova4080" target="_blank" rel="noopener noreferrer">
+                    Написать нам
+                  </a>
                 </Button>
               </div>
             </div>
