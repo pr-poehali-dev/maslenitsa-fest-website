@@ -162,7 +162,7 @@ const Index = () => {
             </div>
             <div className="flex items-center gap-2">
               <Icon name="Clock" size={20} />
-              <span>12:00 — 16:00</span>
+              <span>12:00 - 16:00</span>
             </div>
             <div className="flex items-center gap-2">
               <Icon name="MapPin" size={20} />
