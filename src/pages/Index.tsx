@@ -222,7 +222,7 @@ const Index = () => {
               <Card className="p-6 bg-card/95 backdrop-blur-sm">
                 <Icon name="Clock" size={32} className="mb-4 text-primary" />
                 <h3 className="font-semibold text-lg mb-2">Время</h3>
-                <p className="text-muted-foreground">12:00 — 16:00</p>
+                <p className="text-muted-foreground">12:00 - 17:00</p>
                 <p className="text-sm text-muted-foreground mt-1">(старт квеста в 12:30!)</p>
               </Card>
               <Card className="p-6 bg-card/95 backdrop-blur-sm">
